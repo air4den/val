@@ -27,7 +27,7 @@ body {
 }
 
 .peony-img {
-  width: 220px;
+  width: 300px;
   height: auto;
   margin-bottom: 24px;
   border-radius: 12px;
@@ -92,7 +92,7 @@ body {
 
 /* ---- Yes state ---- */
 .macron-img {
-  width: 240px;
+  width: 350px;
   height: auto;
   margin-top: 24px;
   border-radius: 12px;
@@ -156,7 +156,7 @@ body {
   }
 
   .peony-img {
-    width: 170px;
+    width: 240px;
     margin-bottom: 18px;
   }
 
@@ -176,7 +176,7 @@ body {
 
 
   .macron-img {
-    width: 190px;
+    width: 270px;
   }
 }
 
