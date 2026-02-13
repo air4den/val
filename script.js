@@ -99,11 +99,12 @@ document.addEventListener('mousemove', (e) => {
   moveNoButton(e.clientX, e.clientY);
 });
 
-// Mobile: touchmove + touchstart
+// Mobile: touchmove + touchstart (prevent scroll on iOS)
 document.addEventListener('touchmove', (e) => {
+  e.preventDefault();
   const touch = e.touches[0];
   moveNoButton(touch.clientX, touch.clientY);
-}, { passive: true });
+}, { passive: false });
 
 document.addEventListener('touchstart', (e) => {
   const touch = e.touches[0];

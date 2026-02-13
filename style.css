@@ -4,16 +4,16 @@
   box-sizing: border-box;
 }
 
-html, body {
+html {
   height: 100%;
   overflow: hidden;
-  overscroll-behavior: none;
-  -webkit-overflow-scrolling: none;
-  touch-action: manipulation;
 }
 
 body {
-  min-height: 100dvh;
+  height: 100dvh;
+  overflow: hidden;
+  overscroll-behavior: none;
+  touch-action: manipulation;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +21,10 @@ body {
   font-family: 'Georgia', 'Times New Roman', serif;
   padding: 20px;
   position: fixed;
-  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .card {
@@ -30,9 +33,11 @@ body {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15), 0 8px 20px rgba(0, 0, 0, 0.1);
   padding: 40px 36px;
   max-width: 600px;
+  max-height: 100dvh;
   width: 100%;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
 .peony-img {
@@ -182,7 +187,6 @@ body {
     font-size: 0.9rem;
     padding: 10px 26px;
   }
-
 
   .macron-img {
     width: 270px;
