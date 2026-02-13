@@ -134,7 +134,7 @@ btnNo.addEventListener('click', (e) => {
 
 // ---- Hearts animation ----
 function spawnHearts() {
-  const emojis = ['💕', '❤️', '💖', '💗', '💘', '🌸'];
+  const emojis = ['💕', '❤️', '💖', '💗', '💘', '🌸', '🇫🇷', '🥪', '🥰', '😁'];
   for (let i = 0; i < 30; i++) {
     setTimeout(() => {
       const heart = document.createElement('span');
