@@ -50,7 +50,7 @@ body {
 .question {
   font-size: 1.65rem;
   color: #4a2040;
-  margin-bottom: 32px;
+  margin-bottom: 10px;
   line-height: 1.4;
 }
 
@@ -124,7 +124,7 @@ body {
 }
 
 .happy-text {
-  font-size: 1.65rem;
+  font-size: 1.8rem;
   color: #4a2040;
   line-height: 1.4;
 }
@@ -175,7 +175,7 @@ body {
   }
 
   .question, .happy-text {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
   }
 
   .btn-yes {
