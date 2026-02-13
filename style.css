@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 40%, #f48fb1 100%);
+  font-family: 'Georgia', 'Times New Roman', serif;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15), 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px 36px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.peony-img {
+  width: 220px;
+  height: auto;
+  margin-bottom: 24px;
+  border-radius: 12px;
+}
+
+.question {
+  font-size: 1.65rem;
+  color: #4a2040;
+  margin-bottom: 32px;
+  line-height: 1.4;
+}
+
+.buttons-container {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 8px;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-yes {
+  background: linear-gradient(135deg, #f06292, #ec407a);
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 16px 44px;
+  box-shadow: 0 4px 16px rgba(236, 64, 122, 0.4);
+  z-index: 2;
+}
+
+.btn-yes:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 24px rgba(236, 64, 122, 0.55);
+}
+
+.btn-yes:active {
+  transform: scale(0.97);
+}
+
+.btn-no {
+  background: #bdbdbd;
+  color: #fff;
+  font-size: 1rem;
+  padding: 12px 32px;
+  position: absolute;
+  transition: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ---- Yes state ---- */
+.macron-img {
+  width: 240px;
+  height: auto;
+  margin-top: 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.macron-img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.2);
+}
+
+.macron-img:active {
+  transform: scale(0.98);
+}
+
+.happy-text {
+  font-size: 1.65rem;
+  color: #4a2040;
+  line-height: 1.4;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Hearts animation */
+.hearts-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  font-size: 1.5rem;
+  animation: floatUp 3s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100vh) scale(1.5) rotate(30deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 28px 20px;
+    border-radius: 18px;
+  }
+
+  .peony-img {
+    width: 170px;
+    margin-bottom: 18px;
+  }
+
+  .question, .happy-text {
+    font-size: 1.35rem;
+  }
+
+  .btn-yes {
+    font-size: 1.05rem;
+    padding: 14px 36px;
+  }
+
+  .btn-no {
+    font-size: 0.9rem;
+    padding: 10px 26px;
+  }
+
+
+  .macron-img {
+    width: 190px;
+  }
+}
+
